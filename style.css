@@ -1,7 +1,7 @@
 body {
    background: hsl(230, 17%, 14%);
    color: white;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Inter', sans-serif;
 }
 
 p {
@@ -20,6 +20,7 @@ p {
     grid-column: span 4;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 
@@ -118,8 +119,9 @@ p {
     
 }
 
-.number {
-    font-size: 30px;
+.weight-700 {
+    font-size: 26px;
+    font-weight: 700;
 }
 
 .up,
@@ -137,8 +139,14 @@ p {
 }
 
 .foll-subs {
-    
-    text-transform: capitalize;
-
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
+@media (max-width: 500px) {
+    .follower-section,
+    .today-views {
+flex-direction: column;
+    }
+}
