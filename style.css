@@ -1,7 +1,7 @@
 body {
    background: hsl(230, 17%, 14%);
    color: white;
-   font-family: Arial, Helvetica, sans-serif
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -37,6 +37,12 @@ p {
     align-items: center;
 }
 
+.icon-username {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
 .today-views {
     display: flex;
     flex-wrap: wrap;
@@ -70,22 +76,24 @@ p {
 }
 
 .big-number {
+    
     font-weight: 600;
     font-size: 36px;
-    
+    margin: 10px;
+    margin-bottom: 0px;
 }
 
 .icon-username {
-    display: flex;
+    
     min-height: 25px;
-    align-items: center;
-    justify-content: center;
     gap: 12px;
     font-size: 8px;
 
 }
 
 .follow-count {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -100,14 +108,14 @@ p {
     justify-content: space-between;
     font-size: 10px;
     margin: 10px;
-    
-    
 }
+
 .number-change {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 20px;
+    margin: 10px;
+    
 }
 
 .number {
@@ -117,6 +125,7 @@ p {
 .up,
 .down {
     font-size: 8px;
+    margin: 12px;
 }
 
 .up {
@@ -128,5 +137,8 @@ p {
 }
 
 .foll-subs {
+    
     text-transform: capitalize;
+
 }
+
