@@ -8,10 +8,18 @@ p {
     margin: 0px;
 }
 
+.opacity {
+    opacity: 50%;
+}
+
+.total-followers {
+    font-size: 12px;
+}
 
 .header {
     grid-column: span 4;
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -61,6 +69,12 @@ p {
     border-top: hsl(348, 97%, 39%) solid 2px;
 }
 
+.big-number {
+    font-weight: 600;
+    font-size: 36px;
+    
+}
+
 .icon-username {
     display: flex;
     min-height: 25px;
@@ -71,29 +85,48 @@ p {
 
 }
 
+.follow-count {
+    justify-content: center;
+}
+
 .icon {
     width: 10px;
     height: 10px;    
 }
 
 
-
 .views-likes {
     display: flex;
     justify-content: space-between;
-    font-size: 8px;
+    font-size: 10px;
+    margin: 10px;
+    
     
 }
 .number-change {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 20px;
 }
 
 .number {
     font-size: 30px;
 }
 
-.up-down {
+.up,
+.down {
     font-size: 8px;
+}
+
+.up {
+ color: hsl(163, 72%, 41%);
+}
+
+.down {
+    color: hsl(356, 69%, 56%);
+}
+
+.foll-subs {
+    text-transform: capitalize;
 }
