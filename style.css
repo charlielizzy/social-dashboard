@@ -1,16 +1,13 @@
 body {
-   background: rgb(32, 32, 80);
+   background: hsl(230, 17%, 14%);
    color: white;
    font-family: Arial, Helvetica, sans-serif
 }
 
-.dashboard {
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: 5;
-    border: black 1px solid;
-    
+p {
+    margin: 0px;
 }
+
 
 .header {
     grid-column: span 4;
@@ -20,28 +17,82 @@ body {
 
 .follower-section {
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
+    gap: 20px;
+    
 }
 
 .follower-section > div {
-    background: blue;
-    height: 100px;
-    width: 150px;
+    background: hsl(228, 28%, 20%);
+    min-height: 120px;
+    min-width: 150px;
+    justify-content: center;
+    align-items: center;
 }
 
 .today-views {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .today-views > div {
-    background: blue;
-    width: 150px;
-    height: 50px;
-    
-    
-    
+    background: hsl(228, 28%, 20%);
+    min-width: 150px;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fb {
+    border-top: hsl(208, 92%, 53%) solid 2px;
+}
+
+.twitter {
+    border-top: hsl(203, 89%, 53%) solid 2px;
+}
+
+.ig {
+    border-top: hsl(329, 70%, 58%) solid 2px;
+
+}
+
+.yt {
+    border-top: hsl(348, 97%, 39%) solid 2px;
+}
+
+.icon-username {
+    display: flex;
+    min-height: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 8px;
+
+}
+
+.icon {
+    width: 10px;
+    height: 10px;    
+}
+
+
+
+.views-likes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+}
+.number-change {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.number {
+    font-size: 30px;
+}
+
+.up-down {
+    font-size: 8px;
 }
